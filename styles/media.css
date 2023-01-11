@@ -5,10 +5,6 @@
 }
 
 @media (max-width: 900px) {
-  .container {
-    padding: 0 20px;
-  }
-
   /* --- Header --- */
 
   .header-wrapper {
@@ -28,8 +24,6 @@
     border-radius: 10px;
     top: 80px;
     right: 0px;
-
-    /* flex-direction: column; */
     padding: 20px;
   }
 
@@ -153,6 +147,8 @@
 }
 
 @media (max-width: 900px) {
+  /* --- Statistics section --- */
+
   .statistics-heading {
     width: 100%;
   }
@@ -205,6 +201,8 @@
 }
 
 @media (max-width: 750px) {
+  /* --- Link Generator section --- */
+
   .form-wrapper {
     padding: 10px;
     background-image: url("../images/bg-shorten-mobile.svg");
@@ -231,6 +229,34 @@
     height: 50px;
   }
 
+  /* Generate link additional info */
+  .generated-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .generated-item > p {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--grey);
+  }
+
+  .new-link {
+    width: 100%;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .new-link > p {
+    margin-right: 0;
+  }
+
+  .copy-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  /* Boost Section */
   .boost-section {
     background-image: url("../images/bg-boost-mobile.svg");
   }

@@ -278,6 +278,20 @@ header {
   opacity: 0.8;
 }
 
+/* Generate link additional info */
+
+.generated-item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 15px;
+  width: 100%;
+  min-height: 50px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .new-link {
   display: flex;
   align-items: center;
@@ -296,20 +310,12 @@ header {
   border-radius: 5px;
   padding: 8px 25px;
   cursor: pointer;
+  font-weight: 700;
 }
 
-/* Generate link additional info */
-
-.generated-item {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 0 15px;
-  width: 100%;
-  min-height: 50px;
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.copy-btn.copied {
+  background-color: var(--prmDarkViolet);
+  padding: 8px 17px;
 }
 
 /* ---- Advanced statistics ---- */
